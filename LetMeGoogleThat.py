@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.commn.keys import keys
 import time
 import os
 #grabbing the information user wants to google
@@ -14,7 +15,7 @@ if search is not '':
     #clear the all the strings in the input field
     elem.clear()
     elem.send_keys(search)
-    elem.send_keys(Keys.RETURN)
+    elem.send_keys(Keys.ENTER)
     #after filling press enter, same as .submit()
     #elem.submit()
     os.system('cls')
