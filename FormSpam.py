@@ -4,7 +4,7 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-url= 'https://docs.google.com/forms/d/e/1FAIpQLSfPcxRjEbGq5qo5lcHUWZjLcOSeBfScNUH48jMSubgPst-5zQ/viewform'
+url= 'https://docs.google.com/forms/d/e/1FAIpQLSc_77-z54kT28t8zbweKQU4AKyXetmSBxL2EmQrzT4IHSUE-w/viewform'
 #Prompt the user the enter the number of time to spam the form
 num_times=input("Enter the number of time you want to spam: ")
 #Prompt the user to enter the content to spam
