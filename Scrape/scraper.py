@@ -17,7 +17,7 @@ soup=BS(data,'lxml')
 #print (soup.prettify())
 #href_lst = soup.find_all('span', class_=re.compile("^(sc-)"))
 href_lst = set(soup.find_all('a', href=re.compile('/')))
-with open('url.csv','w',encoding='utf-8') as f:
+with open('url.csv','a+',encoding='utf-8') as f:
     writer=csv.writer(f)
     inlst=[]
     writer.writerow(["Title","URL"])
