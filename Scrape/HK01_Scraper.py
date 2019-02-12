@@ -41,7 +41,7 @@ with open('./ScrapedContents/url.csv','a+',encoding='utf-8') as f: #create a fil
         writer.writerow(subl)
 
 f.close()
-
+ 
 inlst2=[]
 cCount=0
 with open('./ScrapedContents/content.csv', 'a+', encoding='utf-8') as k:
@@ -61,12 +61,10 @@ with open('./ScrapedContents/content.csv', 'a+', encoding='utf-8') as k:
         completeContent=[]
 
         for para in para_lst:               
-            if (para.string == str2)or (para.string == str1):
-               #condition to remove unwanted strings, these 2 are the promotions of their own company/site
-                continue
-            else:
-                completeContent.append("".join(para.stripped_strings)) 
-                #add seperated paragraphs to a list for joining back to a whole paragraph
+            if (para.string == str2) or (para.string == str1):
+                para.string.replace_with('')
+            completeContent.append("".join(para.stripped_strings)) 
+            #add seperated paragraphs to a list for joining back to a whole paragraph
 
         paragraph=''.join(completeContent)
         print(f'Scraping {url} \n' if c.status_code==200 else f'Error: requests.get failed')
