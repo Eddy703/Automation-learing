@@ -1,4 +1,6 @@
 # Automation-learing
+
+## The HK01 scrape had been moved to another repo, named as 'Web-Scraping'
 This repository is created to learn web automation, API(s) and modules.
 
 Webdrivers(For Selenium files):
@@ -18,9 +20,4 @@ re
 For 'AutoTwitter.py', in order for it to function properly, please recreate a text file named
 'user.txt' format will be python dictionary "{"username":"password"}"
 
-Folder 'Scrape' is created for scraping websites,
-output are being stored as .csv encoded in utf-8.
-
-Site Scraped:
--https://www.hk01.com ( a Hong Kong News Meida, most of the contents are in T-Chinese)
 
